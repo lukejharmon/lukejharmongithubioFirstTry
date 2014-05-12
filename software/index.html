@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Harmon-Alfaro ToL projects</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="style.css" rel="stylesheet" type="text/css" media="all" />
+<style type="text/css">
+<!--
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #999;
+}
+a:active {
+	text-decoration: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+}
+.subtitle-project {
+	color: #CC6;
+}
+sidebar title {
+	color: #FFF;
+}
+.style1 {color: #FFFFFF}
+-->
+</style></head>
+<body>
+<div id="wrapper">
+		<div id="logo">
+			<h1>&nbsp;</h1>
+		</div>
+	<div id="header"></div>
+	<div id="menu">
+		<ul>
+			<li><a href="index.html">projects</a></li>
+			<li><a href="software.html">software</a></li>
+			<li><a href="group.html">group</a></li>
+		</ul>
+        <ul>
+          <li></li>
+        </ul>
+  </div>
+	<div id="page">
+		<div id="content">
+			<div class="post">
+				<h2 class="title"><a name="medusaDescription" id="medusaDescription"></a><a href="#">Medusa</a></h2>
+			  <p class="meta"><span class="subtitle-project">identifying evolutionary shifts in lineage diversification for unresolved trees using stepwise AIC<a href="#" class="permalink"></a></span></p>
+				<div class="entry">
+		      <p>The uneven distribution of species richness is a fundamental and unexplained pattern of vertebrate biodiversity. Although diversity in speciose groups is often attributed to accelerated cladogenesis, we lack a quantitative framework for identifying and comparing the exceptional changes of tempo in evolutionary history. Incorporating both taxonomic with topological information on lineages, <a href="papers/Alfaro_et_al_2009_PNAS.pdf">MEDUSA</a> -- <strong>m</strong>odeling<strong> e</strong>volutionary <strong>d</strong>iversity <strong>u</strong>sing <strong>s</strong>tepwise <strong>A</strong>IC -- identifies multiple shifts in birth and death rates and is well suited for incompletely resolved phylogenies. MEDUSA is provided as open-source software in the R language and is contained within the <a href="http://cran.r-project.org/web/packages/geiger/index.html">GEIGER</a> package.</p>
+					<p class="clearfix">&nbsp;</p>
+				</div>
+			</div>
+			<div class="post">
+				<h2 class="title"><a name="fossilmedusaDescription" id="fossilmedusaDescription"></a><a href="#"><img src="images/fossilmedusa.logo.png" width="90" height="27" /> medusa</a></h2>
+        <p class="meta"><span class="subtitle-project">incorporating fossil data into inference of shifts in diversification rates using stepwise AIC<a href="#" class="permalink"></a></span></p>
+				<div class="entry">
+					<p>Understanding the disparity in clade sizes across the tree of life is a principle issue in evolutionary biology. Traditionally, such understanding of relative speciation and extinction rates came from studying fossil richness data. However, this approach is insufficient for lineages with poor or absent fossil records. Alternatively, the past decade has seen a flurry of activity fitting birth-death models to molecular phylogenies, using information from extant species richnesses and inferred branching times. However, molecular phylogenies, being composed of non-extinct taxa, impose a necessary monotonic increase in taxon richness over time. As we know from the fossil record that some lineages previously enjoyed higher diversity than today, the strict increase in diversity implied from molecular data may obfuscate genuine past diversification patterns, and for some clades may mislead inference altogether. An ideal approach would utilize a marriage of fossil and molecular data. fossilMEDUSA, building upon the original MEDUSA method of Alfaro et al. (2007; PNAS), supplements molecular phylogenies with past richness information from the fossil record, fitting piecewise birth-death models to better extract information on past diversification dynamics. The method is coded in R, and will be released as part of the forthcoming GEIGER 2.0 package.</p>
+					<p class="clearfix">&nbsp;</p>
+				</div>
+			</div>
+		  <div class="post">
+				<h2 class="title"><a name="meccaDescription" id="meccaDescription"></a><a href="#">mecca</a></h2>
+			<p class="meta"><span class="subtitle-project">modeling trait evolution and lineage diversification on unresolved trees by approximate Bayesian computation<a href="#" class="permalink"></a></span></p>
+				<div class="entry">
+					<p>Rate heterogeneity is a plausible explanation for the uneven distribution of species	richness and phenotypic variation across clades. In recent years, a suite of comparative methods have been developed to fit multiple rate models to phylogenetic data. However, due to their requirement of a completely sampled tree with associated phenotypic data, these methods have limited utility at broad phylogenetic scales where comprehensive sampling is commonly difficult to achieve. <a href="software.html">MECCA</a> -- <strong>m</strong>odeling <strong>e</strong>volution of <strong>c</strong>ontinuous <strong>c</strong>haracters by <strong>A</strong>BC -- implements approximate Bayesian computation (ABC) to simultaneously infer rates of diversification and trait evolution from incompletely sampled phylogenies and trait data.</p>
+					<p>&nbsp;</p>
+				</div>
+		  </div>
+			<div class="post">
+			  <h2 class="title"><a name="auteurDescription" id="auteurDescription"></a><a href="#">Auteur</a></h2>
+			  <p class="meta"><span class="subtitle-project">identifying shifts in the process of trait evolution by reversible-jump Markov chain Monte Carlo sampling</span></p>
+			  <div class="entry">
+			    <p>Evolutionary biologists since Darwin have been fascinated by differences in the rate of trait-evolutionary change across lineages. Yet, we still lack methods for identifying shifts in evolutionary rates on the growing tree of life while also accommodating uncertainty in the particulars of the evolutionary process. <a href="software.html">AUTEUR</a> -- <strong>a</strong>ccommodating<strong> u</strong>ncertainty in <strong>t</strong>rait <strong>e</strong>volution using <strong>R</strong> -- provides a generalized statistical model under Brownian-motion process of trait evolution, sampling models with a global-rate to a so-called 'free-model' where each branch in the tree has an idiosyncratic rate of evolution. Using Markov chain Monte Carlo sampling -- with periodic jumps between models differing in complexity -- AUTEUR is used to infer minimal complexity necessary to explain the observed comparative data. Posterior distributions of branch-wise rate estimates and model complexity are the central parameters of interest for this method. The statistical framework of AUTEUR is provided as an open-source package in the <a href="http://cran.r-project.org/web/packages/auteur/index.html">R</a> environment. </p>
+			    <p class="clearfix">&nbsp;</p>
+		      </div>
+		  </div>
+<div style="clear: both;">&nbsp;</div>
+		</div>
+		<!-- end #content -->
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Projects</h2>
+					<p>With the increasing abundance of phylogenetic information from the tree of life, it is essential that phylogenetic comparative methods keep pace with the data deluge. Described here are several data-driven methods for identifying groups of organisms that are evolutionarily exceptional in regard to trait and lineage diversification</p>
+				</li>
+				<li>
+					<h2>Laboratories</h2>
+					<ul>
+						<li><a href="http://www.webpages.uidaho.edu/~lukeh/">Luke Harmon</a></li>
+						<li><a href="http://pandorasboxfish.squarespace.com/">Mike Alfaro</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>WiKIS</h2>
+					<ul>
+						<li><a href="https://www.nescent.org/wg_phyloinformatics/R_Hackathon_1">R hackathon</a></li>
+						<li><a href="https://www.nescent.org/wg_phyloinformatics/Phyloinformatics_Summer_of_Code_2011">Google summer of code</a></li>
+						<li><a href="http://bodegaphylo.wikispot.org/R_Tutorial_(Glor_%26_O'Meara)">Bodega phylogenetics</a></li>
+						<li><a href="http://www.r-phylo.org/wiki/Main_Page">R-Phylo</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>BLOGS</h2>
+					<ul>
+						<li><a href="http://treethinkers.blogspot.com/">dechronization</a></li>
+						<li><a href="http://phytools.blogspot.com/">phytools</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>&nbsp;</h2>
+</li>
+			</ul>
+</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;<span class="style1" style="clear: both;">&nbsp;This research is funded by a grant from the National Science Foundation</span></div>
+  </div>
+</div>
+<div id="footer">
+	<p>based on CSS templates</p>
+</div>
+</body>
+</html>
